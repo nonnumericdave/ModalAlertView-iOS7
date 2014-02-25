@@ -10,10 +10,10 @@
 		B3B47C0618BC71EE004EC6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0518BC71EE004EC6EC /* Foundation.framework */; };
 		B3B47C0818BC71EE004EC6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0718BC71EE004EC6EC /* CoreGraphics.framework */; };
 		B3B47C0A18BC71EE004EC6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0918BC71EE004EC6EC /* UIKit.framework */; };
-		B3B47C1218BC71EE004EC6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1118BC71EE004EC6EC /* main.m */; };
-		B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.m */; };
+		B3B47C1218BC71EE004EC6EC /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1118BC71EE004EC6EC /* main.mm */; };
+		B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.mm */; };
 		B3B47C1918BC71EE004EC6EC /* ModalAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */; };
-		B3B47C1C18BC71EE004EC6EC /* DAFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */; };
+		B3B47C1C18BC71EE004EC6EC /* DAFViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		B3B47C0718BC71EE004EC6EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B3B47C0918BC71EE004EC6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3B47C0D18BC71EE004EC6EC /* ModalAlertView.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ModalAlertView.plist; sourceTree = "<group>"; };
-		B3B47C1118BC71EE004EC6EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3B47C1118BC71EE004EC6EC /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B3B47C1318BC71EE004EC6EC /* ModalAlertView.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalAlertView.pch; sourceTree = "<group>"; };
 		B3B47C1418BC71EE004EC6EC /* DAFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAFAppDelegate.h; sourceTree = "<group>"; };
-		B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAFAppDelegate.m; sourceTree = "<group>"; };
+		B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DAFAppDelegate.mm; sourceTree = "<group>"; };
 		B3B47C1818BC71EE004EC6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ModalAlertView.storyboard; sourceTree = "<group>"; };
 		B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAFViewController.h; sourceTree = "<group>"; };
-		B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAFViewController.m; sourceTree = "<group>"; };
+		B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DAFViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +76,13 @@
 			isa = PBXGroup;
 			children = (
 				B3B47C1418BC71EE004EC6EC /* DAFAppDelegate.h */,
-				B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.m */,
-				B3B47C1118BC71EE004EC6EC /* main.m */,
+				B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.mm */,
+				B3B47C1118BC71EE004EC6EC /* main.mm */,
 				B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */,
 				B3B47C0D18BC71EE004EC6EC /* ModalAlertView.plist */,
 				B3B47C1318BC71EE004EC6EC /* ModalAlertView.pch */,
 				B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */,
-				B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */,
+				B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */,
 			);
 			path = ModalAlertView;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.m in Sources */,
-				B3B47C1C18BC71EE004EC6EC /* DAFViewController.m in Sources */,
-				B3B47C1218BC71EE004EC6EC /* main.m in Sources */,
+				B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.mm in Sources */,
+				B3B47C1C18BC71EE004EC6EC /* DAFViewController.mm in Sources */,
+				B3B47C1218BC71EE004EC6EC /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

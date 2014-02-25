@@ -5,10 +5,13 @@
 //  Copyright (c) 2014 David Flores. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef DAFAppDelegate_h
+#define DAFAppDelegate_h
 
 @interface DAFAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow* window;
 
 @end
+
+#endif

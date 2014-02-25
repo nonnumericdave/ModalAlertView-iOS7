@@ -5,8 +5,11 @@
 //  Copyright (c) 2014 David Flores. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef DAFViewController_h
+#define DAFViewController_h
 
 @interface DAFViewController : UIViewController
 
 @end
+
+#endif
