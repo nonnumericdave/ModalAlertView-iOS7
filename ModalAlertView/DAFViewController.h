@@ -10,6 +10,9 @@
 
 @interface DAFViewController : UITableViewController
 
+// UITableViewDelegate
+- (void)tableView:(UITableView*)pTableView didSelectRowAtIndexPath:(NSIndexPath*)pIndexPath;
+
 @end
 
 #endif

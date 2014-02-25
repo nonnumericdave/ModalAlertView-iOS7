@@ -10,6 +10,7 @@
 
 @interface DAFAppDelegate : UIResponder <UIApplicationDelegate>
 
+// DAFAppDelegate
 @property (strong, nonatomic) UIWindow* window;
 
 @end
