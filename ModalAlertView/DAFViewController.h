@@ -8,7 +8,7 @@
 #ifndef DAFViewController_h
 #define DAFViewController_h
 
-@interface DAFViewController : UIViewController
+@interface DAFViewController : UITableViewController
 
 @end
 
