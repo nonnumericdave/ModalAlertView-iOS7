@@ -14,6 +14,7 @@
 		B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.mm */; };
 		B3B47C1918BC71EE004EC6EC /* ModalAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */; };
 		B3B47C1C18BC71EE004EC6EC /* DAFViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */; };
+		B3B47C3C18BC8263004EC6EC /* DAFRunLoop.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C3B18BC8262004EC6EC /* DAFRunLoop.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		B3B47C1818BC71EE004EC6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ModalAlertView.storyboard; sourceTree = "<group>"; };
 		B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAFViewController.h; sourceTree = "<group>"; };
 		B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DAFViewController.mm; sourceTree = "<group>"; };
+		B3B47C3A18BC8262004EC6EC /* DAFRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAFRunLoop.h; sourceTree = "<group>"; };
+		B3B47C3B18BC8262004EC6EC /* DAFRunLoop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DAFRunLoop.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +80,14 @@
 			children = (
 				B3B47C1418BC71EE004EC6EC /* DAFAppDelegate.h */,
 				B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.mm */,
+				B3B47C3A18BC8262004EC6EC /* DAFRunLoop.h */,
+				B3B47C3B18BC8262004EC6EC /* DAFRunLoop.mm */,
+				B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */,
+				B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */,
 				B3B47C1118BC71EE004EC6EC /* main.mm */,
 				B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */,
 				B3B47C0D18BC71EE004EC6EC /* ModalAlertView.plist */,
 				B3B47C1318BC71EE004EC6EC /* ModalAlertView.pch */,
-				B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */,
-				B3B47C1B18BC71EE004EC6EC /* DAFViewController.mm */,
 			);
 			path = ModalAlertView;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.mm in Sources */,
+				B3B47C3C18BC8263004EC6EC /* DAFRunLoop.mm in Sources */,
 				B3B47C1C18BC71EE004EC6EC /* DAFViewController.mm in Sources */,
 				B3B47C1218BC71EE004EC6EC /* main.mm in Sources */,
 			);
