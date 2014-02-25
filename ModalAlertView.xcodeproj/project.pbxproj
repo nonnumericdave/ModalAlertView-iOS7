@@ -10,12 +10,10 @@
 		B3B47C0618BC71EE004EC6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0518BC71EE004EC6EC /* Foundation.framework */; };
 		B3B47C0818BC71EE004EC6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0718BC71EE004EC6EC /* CoreGraphics.framework */; };
 		B3B47C0A18BC71EE004EC6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0918BC71EE004EC6EC /* UIKit.framework */; };
-		B3B47C1018BC71EE004EC6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C0E18BC71EE004EC6EC /* InfoPlist.strings */; };
 		B3B47C1218BC71EE004EC6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1118BC71EE004EC6EC /* main.m */; };
 		B3B47C1618BC71EE004EC6EC /* DAFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.m */; };
-		B3B47C1918BC71EE004EC6EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1718BC71EE004EC6EC /* Main.storyboard */; };
+		B3B47C1918BC71EE004EC6EC /* ModalAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */; };
 		B3B47C1C18BC71EE004EC6EC /* DAFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */; };
-		B3B47C1E18BC71EE004EC6EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1D18BC71EE004EC6EC /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +21,14 @@
 		B3B47C0518BC71EE004EC6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3B47C0718BC71EE004EC6EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B3B47C0918BC71EE004EC6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B3B47C0D18BC71EE004EC6EC /* ModalAlertView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalAlertView-Info.plist"; sourceTree = "<group>"; };
-		B3B47C0F18BC71EE004EC6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3B47C0D18BC71EE004EC6EC /* ModalAlertView.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ModalAlertView.plist; sourceTree = "<group>"; };
 		B3B47C1118BC71EE004EC6EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B3B47C1318BC71EE004EC6EC /* ModalAlertView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModalAlertView-Prefix.pch"; sourceTree = "<group>"; };
+		B3B47C1318BC71EE004EC6EC /* ModalAlertView.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalAlertView.pch; sourceTree = "<group>"; };
 		B3B47C1418BC71EE004EC6EC /* DAFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAFAppDelegate.h; sourceTree = "<group>"; };
 		B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAFAppDelegate.m; sourceTree = "<group>"; };
-		B3B47C1818BC71EE004EC6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3B47C1818BC71EE004EC6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ModalAlertView.storyboard; sourceTree = "<group>"; };
 		B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAFViewController.h; sourceTree = "<group>"; };
 		B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAFViewController.m; sourceTree = "<group>"; };
-		B3B47C1D18BC71EE004EC6EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,24 +77,14 @@
 			children = (
 				B3B47C1418BC71EE004EC6EC /* DAFAppDelegate.h */,
 				B3B47C1518BC71EE004EC6EC /* DAFAppDelegate.m */,
-				B3B47C1718BC71EE004EC6EC /* Main.storyboard */,
+				B3B47C1118BC71EE004EC6EC /* main.m */,
+				B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */,
+				B3B47C0D18BC71EE004EC6EC /* ModalAlertView.plist */,
+				B3B47C1318BC71EE004EC6EC /* ModalAlertView.pch */,
 				B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */,
 				B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */,
-				B3B47C1D18BC71EE004EC6EC /* Images.xcassets */,
-				B3B47C0C18BC71EE004EC6EC /* Supporting Files */,
 			);
 			path = ModalAlertView;
-			sourceTree = "<group>";
-		};
-		B3B47C0C18BC71EE004EC6EC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3B47C0D18BC71EE004EC6EC /* ModalAlertView-Info.plist */,
-				B3B47C0E18BC71EE004EC6EC /* InfoPlist.strings */,
-				B3B47C1118BC71EE004EC6EC /* main.m */,
-				B3B47C1318BC71EE004EC6EC /* ModalAlertView-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B47C1E18BC71EE004EC6EC /* Images.xcassets in Resources */,
-				B3B47C1018BC71EE004EC6EC /* InfoPlist.strings in Resources */,
-				B3B47C1918BC71EE004EC6EC /* Main.storyboard in Resources */,
+				B3B47C1918BC71EE004EC6EC /* ModalAlertView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,20 +160,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B3B47C0E18BC71EE004EC6EC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3B47C0F18BC71EE004EC6EC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B3B47C1718BC71EE004EC6EC /* Main.storyboard */ = {
+		B3B47C1718BC71EE004EC6EC /* ModalAlertView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B3B47C1818BC71EE004EC6EC /* Base */,
 			);
-			name = Main.storyboard;
+			name = ModalAlertView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,8 +251,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModalAlertView/ModalAlertView-Prefix.pch";
-				INFOPLIST_FILE = "ModalAlertView/ModalAlertView-Info.plist";
+				GCC_PREFIX_HEADER = ModalAlertView/ModalAlertView.pch;
+				INFOPLIST_FILE = ModalAlertView/ModalAlertView.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,8 +264,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModalAlertView/ModalAlertView-Prefix.pch";
-				INFOPLIST_FILE = "ModalAlertView/ModalAlertView-Info.plist";
+				GCC_PREFIX_HEADER = ModalAlertView/ModalAlertView.pch;
+				INFOPLIST_FILE = ModalAlertView/ModalAlertView.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

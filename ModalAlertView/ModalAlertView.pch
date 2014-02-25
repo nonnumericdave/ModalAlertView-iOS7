@@ -1,0 +1,17 @@
+//
+//  ModalAlertView.pch
+//
+//  Created by David Flores on 2/20/14.
+//  Copyright (c) 2014 David Flores. All rights reserved.
+//
+
+#import <Availability.h>
+
+#if ! defined(__IPHONE_5_0)
+#	warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#if defined(__OBJC__)
+#	import <UIKit/UIKit.h>
+#	import <Foundation/Foundation.h>
+#endif
