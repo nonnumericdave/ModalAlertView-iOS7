@@ -8,7 +8,10 @@
 #include "DAFViewController.h"
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@interface DAFViewController ()
+@interface DAFViewController () <UIAlertViewDelegate>
+
+// UIAlertViewDelegate
+- (void)alertView:(UIAlertView*)pAlertView didDismissWithButtonIndex:(NSInteger)iButtonIndex;
 
 // DAFViewController
 - (void)raiseModalAlertViewWithNSRunLoop;
@@ -18,6 +21,9 @@
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @implementation DAFViewController
+{
+	BOOL m_boolAlertViewHasBeenDismissed;
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (void)tableView:(UITableView*)pTableView didSelectRowAtIndexPath:(NSIndexPath*)pIndexPath
@@ -39,9 +45,27 @@
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (void)alertView:(UIAlertView*)pAlertView didDismissWithButtonIndex:(NSInteger)iButtonIndex
+{
+	m_boolAlertViewHasBeenDismissed = YES;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (void)raiseModalAlertViewWithNSRunLoop
 {
+	UIAlertView* pAlertView = [[UIAlertView alloc] initWithTitle:@"Hanging"
+														 message:@"Sorry"
+														delegate:self
+											   cancelButtonTitle:@"Cancel"
+											   otherButtonTitles:nil];
 	
+	m_boolAlertViewHasBeenDismissed = NO;
+	
+	[pAlertView show];
+	
+	while ( ! m_boolAlertViewHasBeenDismissed )
+		[[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+								 beforeDate:[NSDate distantFuture]];
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
