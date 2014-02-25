@@ -16,22 +16,7 @@
 		B3B47C1918BC71EE004EC6EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1718BC71EE004EC6EC /* Main.storyboard */; };
 		B3B47C1C18BC71EE004EC6EC /* DAFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */; };
 		B3B47C1E18BC71EE004EC6EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C1D18BC71EE004EC6EC /* Images.xcassets */; };
-		B3B47C2518BC71EE004EC6EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C2418BC71EE004EC6EC /* XCTest.framework */; };
-		B3B47C2618BC71EE004EC6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0518BC71EE004EC6EC /* Foundation.framework */; };
-		B3B47C2718BC71EE004EC6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B47C0918BC71EE004EC6EC /* UIKit.framework */; };
-		B3B47C2F18BC71EE004EC6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3B47C2D18BC71EE004EC6EC /* InfoPlist.strings */; };
-		B3B47C3118BC71EE004EC6EC /* ModalAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B47C3018BC71EE004EC6EC /* ModalAlertViewTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B3B47C2818BC71EE004EC6EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3B47BFA18BC71EE004EC6EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B3B47C0118BC71EE004EC6EC;
-			remoteInfo = ModalAlertView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B3B47C0218BC71EE004EC6EC /* ModalAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +33,6 @@
 		B3B47C1A18BC71EE004EC6EC /* DAFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAFViewController.h; sourceTree = "<group>"; };
 		B3B47C1B18BC71EE004EC6EC /* DAFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAFViewController.m; sourceTree = "<group>"; };
 		B3B47C1D18BC71EE004EC6EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B3B47C2318BC71EE004EC6EC /* ModalAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3B47C2418BC71EE004EC6EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B3B47C2C18BC71EE004EC6EC /* ModalAlertViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalAlertViewTests-Info.plist"; sourceTree = "<group>"; };
-		B3B47C2E18BC71EE004EC6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B3B47C3018BC71EE004EC6EC /* ModalAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalAlertViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +46,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3B47C2018BC71EE004EC6EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3B47C2518BC71EE004EC6EC /* XCTest.framework in Frameworks */,
-				B3B47C2718BC71EE004EC6EC /* UIKit.framework in Frameworks */,
-				B3B47C2618BC71EE004EC6EC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				B3B47C0B18BC71EE004EC6EC /* ModalAlertView */,
-				B3B47C2A18BC71EE004EC6EC /* ModalAlertViewTests */,
 				B3B47C0418BC71EE004EC6EC /* Frameworks */,
 				B3B47C0318BC71EE004EC6EC /* Products */,
 			);
@@ -93,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				B3B47C0218BC71EE004EC6EC /* ModalAlertView.app */,
-				B3B47C2318BC71EE004EC6EC /* ModalAlertViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +72,6 @@
 				B3B47C0518BC71EE004EC6EC /* Foundation.framework */,
 				B3B47C0718BC71EE004EC6EC /* CoreGraphics.framework */,
 				B3B47C0918BC71EE004EC6EC /* UIKit.framework */,
-				B3B47C2418BC71EE004EC6EC /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,24 +101,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B3B47C2A18BC71EE004EC6EC /* ModalAlertViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				B3B47C3018BC71EE004EC6EC /* ModalAlertViewTests.m */,
-				B3B47C2B18BC71EE004EC6EC /* Supporting Files */,
-			);
-			path = ModalAlertViewTests;
-			sourceTree = "<group>";
-		};
-		B3B47C2B18BC71EE004EC6EC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3B47C2C18BC71EE004EC6EC /* ModalAlertViewTests-Info.plist */,
-				B3B47C2D18BC71EE004EC6EC /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,24 +121,6 @@
 			productReference = B3B47C0218BC71EE004EC6EC /* ModalAlertView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B3B47C2218BC71EE004EC6EC /* ModalAlertViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3B47C3718BC71EE004EC6EC /* Build configuration list for PBXNativeTarget "ModalAlertViewTests" */;
-			buildPhases = (
-				B3B47C1F18BC71EE004EC6EC /* Sources */,
-				B3B47C2018BC71EE004EC6EC /* Frameworks */,
-				B3B47C2118BC71EE004EC6EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B3B47C2918BC71EE004EC6EC /* PBXTargetDependency */,
-			);
-			name = ModalAlertViewTests;
-			productName = ModalAlertViewTests;
-			productReference = B3B47C2318BC71EE004EC6EC /* ModalAlertViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,11 +130,6 @@
 				CLASSPREFIX = DAF;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "David Flores";
-				TargetAttributes = {
-					B3B47C2218BC71EE004EC6EC = {
-						TestTargetID = B3B47C0118BC71EE004EC6EC;
-					};
-				};
 			};
 			buildConfigurationList = B3B47BFD18BC71EE004EC6EC /* Build configuration list for PBXProject "ModalAlertView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +145,6 @@
 			projectRoot = "";
 			targets = (
 				B3B47C0118BC71EE004EC6EC /* ModalAlertView */,
-				B3B47C2218BC71EE004EC6EC /* ModalAlertViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,14 +157,6 @@
 				B3B47C1E18BC71EE004EC6EC /* Images.xcassets in Resources */,
 				B3B47C1018BC71EE004EC6EC /* InfoPlist.strings in Resources */,
 				B3B47C1918BC71EE004EC6EC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3B47C2118BC71EE004EC6EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3B47C2F18BC71EE004EC6EC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3B47C1F18BC71EE004EC6EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3B47C3118BC71EE004EC6EC /* ModalAlertViewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B3B47C2918BC71EE004EC6EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B3B47C0118BC71EE004EC6EC /* ModalAlertView */;
-			targetProxy = B3B47C2818BC71EE004EC6EC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B3B47C0E18BC71EE004EC6EC /* InfoPlist.strings */ = {
@@ -289,14 +190,6 @@
 				B3B47C1818BC71EE004EC6EC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B3B47C2D18BC71EE004EC6EC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3B47C2E18BC71EE004EC6EC /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -402,48 +295,6 @@
 			};
 			name = Release;
 		};
-		B3B47C3818BC71EE004EC6EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ModalAlertView.app/ModalAlertView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModalAlertView/ModalAlertView-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ModalAlertViewTests/ModalAlertViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B3B47C3918BC71EE004EC6EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ModalAlertView.app/ModalAlertView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ModalAlertView/ModalAlertView-Prefix.pch";
-				INFOPLIST_FILE = "ModalAlertViewTests/ModalAlertViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,14 +312,6 @@
 			buildConfigurations = (
 				B3B47C3518BC71EE004EC6EC /* Debug */,
 				B3B47C3618BC71EE004EC6EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B3B47C3718BC71EE004EC6EC /* Build configuration list for PBXNativeTarget "ModalAlertViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3B47C3818BC71EE004EC6EC /* Debug */,
-				B3B47C3918BC71EE004EC6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
