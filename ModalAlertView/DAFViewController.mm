@@ -7,6 +7,8 @@
 
 #include "DAFViewController.h"
 
+#include "DAFRunLoop.h"
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @interface DAFViewController () <UIAlertViewDelegate>
 
@@ -71,7 +73,19 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (void)raiseModalAlertViewWithDAFRunLoop
 {
+	UIAlertView* pAlertView = [[UIAlertView alloc] initWithTitle:@"Not Hanging"
+														 message:@"Awesome"
+														delegate:self
+											   cancelButtonTitle:@"Cancel"
+											   otherButtonTitles:nil];
 	
+	m_boolAlertViewHasBeenDismissed = NO;
+	
+	[pAlertView show];
+	
+	while ( ! m_boolAlertViewHasBeenDismissed )
+		[[DAFRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+								  beforeDate:[NSDate distantFuture]];
 }
 
 @end
