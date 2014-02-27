@@ -15,3 +15,5 @@
 #	import <UIKit/UIKit.h>
 #	import <Foundation/Foundation.h>
 #endif
+
+#include <list>
