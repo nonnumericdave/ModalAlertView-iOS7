@@ -11,4 +11,4 @@ This sample is intended to prove a point, so please do not use it in production 
 
 It is possible to run a run loop recursively. In other words, you can call CFRunLoopRun, CFRunLoopRunInMode, or any of the NSRunLoop methods for starting the run loop from within the handler routine of an input source or timer. When doing so, you can use any mode you want to run the nested run loop, including the mode in use by the outer run loop.
 
-Furthermore, the sample they give in Listing 3-2 is a variant of the modal UIAlertView pattern.  The [NSRunLoop documentation](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/nsrunloop_class/reference/reference.html) has another example of the same pattern.
+Furthermore, the sample they give in Listing 3-2 is a variant of the modal UIAlertView pattern.  The [NSRunLoop documentation](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/nsrunloop_class/reference/reference.html) has another example of the same pattern in the documentation of -[run].
