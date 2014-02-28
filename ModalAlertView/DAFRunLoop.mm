@@ -133,62 +133,62 @@ struct __CFRunLoop {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @implementation DAFRunLoop
 {
-	NSRunLoop* m_pRunLoop;
+    NSRunLoop* m_pRunLoop;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 + (DAFRunLoop*)currentRunLoop
 {
-	return [[DAFRunLoop alloc] initWithRunLoop:[NSRunLoop currentRunLoop]];
+    return [[DAFRunLoop alloc] initWithRunLoop:[NSRunLoop currentRunLoop]];
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (BOOL)runMode:(NSString*)pModeString beforeDate:(NSDate*)pLimitDate
 {
-	NSRunLoop* pCurrentRunLoop = [NSRunLoop currentRunLoop];
-	CFRunLoopRef refCurrentRunLoop = [pCurrentRunLoop getCFRunLoop];
-	
-	std::list<CFRunLoopObserverRef> listRunLoopObservers;
-	if ( refCurrentRunLoop != NULL &&
-		 refCurrentRunLoop->_currentMode != NULL &&
-		 refCurrentRunLoop->_currentMode->_observers != NULL )
-	{
-		CFArrayRef refRunLoopObserverArray = refCurrentRunLoop->_currentMode->_observers;
-		CFIndex indexRunLoopObserverCount = ::CFArrayGetCount(refRunLoopObserverArray);
-		for (CFIndex index = 0; index < indexRunLoopObserverCount; index++)
-		{
-			CFRunLoopObserverRef refCurrentRunLoopObserver =
-				static_cast<CFRunLoopObserverRef>(const_cast<void*>(::CFArrayGetValueAtIndex(refRunLoopObserverArray, index)));
-			
-			if ( __CFRunLoopObserverIsFiring(refCurrentRunLoopObserver) )
-			{
-				::CFRetain(refCurrentRunLoopObserver);
-				listRunLoopObservers.push_back(refCurrentRunLoopObserver);
-				__CFRunLoopObserverUnsetFiring(refCurrentRunLoopObserver);
-			}
-		}
-	}
-	
-	BOOL boolRunLoopResult = [m_pRunLoop runMode:pModeString beforeDate:pLimitDate];
-	
-	for (CFRunLoopObserverRef refCurrentRunLoopObserver : listRunLoopObservers)
-	{
-		__CFRunLoopObserverSetFiring(refCurrentRunLoopObserver);
-		::CFRelease(refCurrentRunLoopObserver);
-	}
-	
-	return boolRunLoopResult;
+    NSRunLoop* pCurrentRunLoop = [NSRunLoop currentRunLoop];
+    CFRunLoopRef refCurrentRunLoop = [pCurrentRunLoop getCFRunLoop];
+    
+    std::list<CFRunLoopObserverRef> listRunLoopObservers;
+    if ( refCurrentRunLoop != NULL &&
+         refCurrentRunLoop->_currentMode != NULL &&
+         refCurrentRunLoop->_currentMode->_observers != NULL )
+    {
+        CFArrayRef refRunLoopObserverArray = refCurrentRunLoop->_currentMode->_observers;
+        CFIndex indexRunLoopObserverCount = ::CFArrayGetCount(refRunLoopObserverArray);
+        for (CFIndex index = 0; index < indexRunLoopObserverCount; index++)
+        {
+            CFRunLoopObserverRef refCurrentRunLoopObserver =
+                static_cast<CFRunLoopObserverRef>(const_cast<void*>(::CFArrayGetValueAtIndex(refRunLoopObserverArray, index)));
+            
+            if ( __CFRunLoopObserverIsFiring(refCurrentRunLoopObserver) )
+            {
+                ::CFRetain(refCurrentRunLoopObserver);
+                listRunLoopObservers.push_back(refCurrentRunLoopObserver);
+                __CFRunLoopObserverUnsetFiring(refCurrentRunLoopObserver);
+            }
+        }
+    }
+    
+    BOOL boolRunLoopResult = [m_pRunLoop runMode:pModeString beforeDate:pLimitDate];
+    
+    for (CFRunLoopObserverRef refCurrentRunLoopObserver : listRunLoopObservers)
+    {
+        __CFRunLoopObserverSetFiring(refCurrentRunLoopObserver);
+        ::CFRelease(refCurrentRunLoopObserver);
+    }
+    
+    return boolRunLoopResult;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (id)initWithRunLoop:(NSRunLoop*)pRunLoop
 {
-	self = [super init];
-	
-	if ( self != nil )
-		m_pRunLoop = pRunLoop;
-	
-	return self;
+    self = [super init];
+    
+    if ( self != nil )
+        m_pRunLoop = pRunLoop;
+    
+    return self;
 }
 
 @end
